@@ -1,0 +1,52 @@
+The api interface is built on crud
+the api is required for interaction of the frontend with the backend of the 
+project
+we need to have  a correct mapping between the two in order to map them
+
+mongodb:
+nosql
+store json
+easy
+free cloud hosting
+
+
+enable access from anywhere incase of hosting from heroku
+
+in mongodb setup the documents have dynamic field setup
+
+we will use mongoose so we won't have to make the collections manually
+
+
+server and db connection doesn't work in sync
+to do that we will invoke mongoose. connect before we spin up the server
+
+models are fancy constructors compiled from the schema definitions 
+an instance of a model is called a document 
+
+the properties which are not part of the defined schema will not be added to the db 
+
+
+we need to set a validation so that we have a particular set of documents which follow a vertain schema
+are passed in the database
+
+
+queries are not pormises
+
+
+findone 
+it has a condition while finding, it is optional if empty the model will return an empty object
+
+
+findone and update
+we need to pass the options in here in order to make sure that the update funcntion follows the validations 
+also we need to make sure that the update value returns the new updated task
+check out use and modify
+
+
+put and patch difference
+in case of patch if the id is matched then only the fields which I want to change will be changed other things will remain the same
+in case of put it will remove the property which needs to stay the same and will change the property which is passed
+
+
+
+asynchronous wrappers are much better than try catch block
